@@ -1,0 +1,96 @@
+# ===========================
+# Flutter / Dart
+# ===========================
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+build/
+coverage/
+pubspec.lock
+
+# ===========================
+# iOS
+# ===========================
+ios/Flutter/Flutter.framework/
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/.symlinks/
+ios/Pods/
+ios/Runner.xcworkspace/
+ios/DerivedData/
+
+# ===========================
+# Android
+# ===========================
+android/.gradle/
+android/app/build/
+android/local.properties
+android/key.properties
+android/captures/
+android/app/src/main/jniLibs/  # if not used
+android/app/src/main/assets/    # only ignore if models are bundled via Flutter assets
+
+# ===========================
+# Python (ML scripts, environments, caches)
+# ===========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments (DO NOT ignore .pkl, .tflite, or .csv files!)
+env/
+venv/
+.venv/
+ENV/
+.ipynb_checkpoints/
+
+# Training outputs & logs (safe to ignore)
+checkpoints/
+outputs/
+logs/
+*.log
+model/            # if you use a 'model/' dir for intermediate saves
+*.h5
+*.onnx
+
+# ===========================
+# Editor / IDE
+# ===========================
+.vscode/
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+# ===========================
+# OS & Miscellaneous
+# ===========================
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+*.bak
+*.old
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# ===========================
+# Sensitive / Local Configs
+# ===========================
+.env
+.env.local
+secrets.json
+config.json  # unless explicitly meant to be shared
+
+# ===========================
+# DO NOT IGNORE – Keep these in repo!
+# ===========================
+# ✅ sms_dataset_10k.csv
+# ✅ sms_classifier.tflite
+# ✅ *.pkl (label_encoder.pkl, vectorizer_vocab.pkl, etc.)
+# ✅ train_sms_classifier.py (if included)
+# ✅ README.md, LICENSE, pubspec.yaml
